@@ -1,6 +1,6 @@
 # Universal Motorcycle Engine Fixture
 
-**Bajaj TORQ Challenge 2026 – Stage 2 Project**
+**Bajaj TORQ Challenge 2026 **
 
 ## Overview
 
