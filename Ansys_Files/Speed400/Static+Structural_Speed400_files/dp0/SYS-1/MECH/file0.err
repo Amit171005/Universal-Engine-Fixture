@@ -1,0 +1,64 @@
+/COM,ANSYS RELEASE 2025 R2           BUILD 25.2      UP20250519       20:04:34
+
+ *** WARNING ***                         CP =       1.344   TIME= 20:04:36
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       1.406   TIME= 20:04:36
+ Material number 134 (used by element 15667) should normally have at     
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       2.859   TIME= 20:04:37
+ Overconstraint may occur for Lagrange multiplier or MPC based contact   
+ algorithm.                                                              
+
+ *** WARNING ***                         CP =       2.859   TIME= 20:04:37
+ Certain contact elements (for example 15666 & 15401) overlap with       
+ other.                                                                  
+
+ *** WARNING ***                         CP =       4.484   TIME= 20:04:38
+ Multiple constraints have been applied on degree of freedom 1 of        
+ contact node 3 (may be more nodes).  The program will remove certain    
+ internal MPCs.  Please check the model carefully.                       
+
+ *** WARNING ***                         CP =       4.547   TIME= 20:04:38
+ Multiple constraints have been applied on degree of freedom 1 of        
+ contact node 3771 (may be more nodes).  The program will remove         
+ certain internal MPCs.  Please check the model carefully.               
+
+ *** WARNING ***                         CP =       5.969   TIME= 20:04:40
+ There are 1 small equation solver pivot terms (e.g., at the UZ degree   
+ of freedom of node 13650) which had to be constrained to produce a      
+ solution.  This typically indicates a numerically unstable model.       
+ Please check your results carefully.                                    
+
+ *** WARNING ***                         CP =       5.969   TIME= 20:04:40
+ An extremely large pivot ratio has been detected by the sparse solver.  
+ This usually indicates a very ill-conditioned matrix or possibly        
+ rigid-body motion.  The solution may be inaccurate or even erroneous.   
+ Please check your results carefully.                                    
+
+ *** WARNING ***                         CP =       6.750   TIME= 20:04:40
+ There are 1 small equation solver pivot terms (e.g., at the UZ degree   
+ of freedom of node 13650) which had to be constrained to produce a      
+ solution.  This typically indicates a numerically unstable model.       
+ Please check your results carefully.                                    
+
+ *** WARNING ***                         CP =       7.812   TIME= 20:04:42
+ There are 1 small equation solver pivot terms (e.g., at the UZ degree   
+ of freedom of node 13650) which had to be constrained to produce a      
+ solution.  This typically indicates a numerically unstable model.       
+ Please check your results carefully.                                    
+
+ *** WARNING ***                         CP =       8.844   TIME= 20:04:43
+ There are 1 small equation solver pivot terms (e.g., at the UZ degree   
+ of freedom of node 13650) which had to be constrained to produce a      
+ solution.  This typically indicates a numerically unstable model.       
+ Please check your results carefully.                                    
+
+ *** WARNING ***                         CP =       9.891   TIME= 20:04:44
+ There are 1 small equation solver pivot terms (e.g., at the UZ degree   
+ of freedom of node 13650) which had to be constrained to produce a      
+ solution.  This typically indicates a numerically unstable model.       
+ Please check your results carefully.                                    

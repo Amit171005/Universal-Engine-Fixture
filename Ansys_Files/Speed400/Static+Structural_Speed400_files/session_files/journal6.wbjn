@@ -1,0 +1,11 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Archive(
+    FilePath="C:/Users/student/Desktop/KTM400/KTM390/Static+Torque/Static+Structural_Speed400.wbpz",
+    IncludeExternalImportedFiles=True)
+model1.Exit()

@@ -1,0 +1,1703 @@
+
+ Ansys Mechanical Enterprise Academic Research     
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2025 R2          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2025 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2025 R2 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2025 R2 
+ Discovery (reduced install) 2025 R2 
+ Core WB Files 2025 R2   
+ Sound - SAS 2025 R2 
+ Additive 2025 R2
+ optiSLang 2025 R2   
+ CFD-Post only 2025 R2   
+ CFX (includes CFD-Post) 2025 R2 
+ Chemkin 2025 R2 
+ FENSAP-ICE 2025 R2  
+ Fluent (includes CFD-Post) 2025 R2  
+ Polyflow (includes CFD-Post) 2025 R2
+ Forte (includes EnSight) 2025 R2
+ ICEM CFD 2025 R2
+ TurboGrid 2025 R2   
+ Remote Solve Manager Standalone Services 2025 R2
+ Aqwa 2025 R2
+ Autodyn 2025 R2 
+ LS-DYNA 2025 R2 
+ Motion 2025 R2  
+ Sherlock 2025 R2
+ ACIS Geometry Interface 2025 R2 
+ AutoCAD Geometry Interface 2025 R2  
+ Catia, Version 4 Geometry Interface 2025 R2 
+ Catia, Version 5 Geometry Interface 2025 R2 
+ Catia, Version 6 Geometry Interface 2025 R2 
+ Creo Elements/Direct Modeling Geometry Interface 2025 R2
+ Creo Parametric Geometry Interface 2025 R2  
+ Inventor Geometry Interface 2025 R2 
+ JTOpen Geometry Interface 2025 R2   
+ NX Geometry Interface 2025 R2   
+ Parasolid Geometry Interface  2025 R2   
+ Solid Edge Geometry Interface 2025 R2   
+ SOLIDWORKS Geometry Interface 2025 R2   
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       4 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     4 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2025 R2              BUILD= 25.2      UP20250519   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  12:47:18  FEB 27, 2026 CP=      0.094
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.281   TIME= 12:47:19
+ The /CONFIG,NOELDB command is not valid in a distributed memory         
+ parallel solution.  Command is ignored.                                 
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  12.7886111    
+
+ TITLE= 
+ wbnew--Static Structural (A5)                                                 
+
+  ACT Extensions:
+      LSDYNA, 2025.2
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+ /COM,     ANSYSMotion, 2025.2
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\student\AppData\Local\Temp\WB_student_12964_2\wbnew_files\dp0\SYS\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\student\AppData\Local\Temp\WB_student_12964_2\wbnew_files\user_files\
+ --- Data in consistent NMM units. See Solving Units in the help system for more
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00660199  VERSION=WINDOWS x64   12:47:19  FEB 27, 2026 CP=      0.297
+
+ wbnew--Static Structural (A5)                                                 
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 'Bush_locator_pin_1 v3:1\Body1' ***********
+ *********** Elements for Body 2 'Bush_locator_pin_1 v3:1\Body1' ***********
+ *********** Elements for Body 3 'Bush_locator_pin_1 v3:1\Body1' ***********
+ *********** Elements for Body 4 'base_plate v39:1\Body1' ***********
+ *********** Elements for Body 5 '8mm_bush_upper v1:1\Body1' ***********
+ *********** Elements for Body 6 '8mm_bush_upper v1:1\Body1' ***********
+ *********** Elements for Body 7 '8mm_bush_upper v1:1\Body1' ***********
+ *********** Elements for Body 8 'Slider_1 v17:1\Body1' ***********
+ *********** Elements for Body 9 'slider_2 v10:1\Body1' ***********
+ *********** Elements for Body 10 'slider_3 v10:1\Body2' ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Create Contact "Contact Region" ***********
+             Real Constant Set For Above Contact Is 12 & 11
+ *********** Create Contact "Contact Region 5" ***********
+             Real Constant Set For Above Contact Is 14 & 13
+ *********** Create Contact "Contact Region 9" ***********
+             Real Constant Set For Above Contact Is 16 & 15
+ *********** Create Contact "Contact Region 10" ***********
+             Real Constant Set For Above Contact Is 18 & 17
+ *********** Create Contact "Contact Region 14" ***********
+             Real Constant Set For Above Contact Is 20 & 19
+ *********** Create Contact "Contact Region 15" ***********
+             Real Constant Set For Above Contact Is 22 & 21
+ *********** Create Contact "Contact Region 20" ***********
+             Real Constant Set For Above Contact Is 24 & 23
+ *********** Create Contact "Contact Region 21" ***********
+             Real Constant Set For Above Contact Is 26 & 25
+ *********** Create Contact "Contact Region 45" ***********
+             Real Constant Set For Above Contact Is 28 & 27
+ *********** Fixed Supports ***********
+ *********** Define Force Using Surface Effect Elements ***********
+
+ LIST DATA TABLE  BISO  FOR MATERIAL     10
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00660199  VERSION=WINDOWS x64   12:47:19  FEB 27, 2026 CP=      1.109
+
+ wbnew--Static Structural (A5)                                                 
+
+
+
+               BiIso Pl (BISO) Table For Material    10
+
+               1   
+   Temps   23.000    
+ Yld Strs  748.90    
+ Tang Mod  3910.0    
+
+
+ ***** ROUTINE COMPLETED *****  CP =         1.109
+
+
+ --- Number of total nodes = 55111
+ --- Number of contact elements = 4019
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 33275
+ --- Number of condensed parts = 0
+ --- Number of total elements = 37294
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  12.7886111    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ PARAMETER _THICKRATIO =    0.6000000000    
+
+ USE PRECONDITIONED CONJUGATE GRADIENT SOLVER
+  CONVERGENCE TOLERANCE = 1.00000E-08
+  MAXIMUM ITERATION     = NumNode*DofPerNode*  1.0000    
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DEFINE RESTART CONTROL FOR LOADSTEP LAST
+ AT FREQUENCY OF LAST AND NUMBER FOR OVERWRITE IS   -1
+
+ DELETE RESTART FILES OF ENDSTEP
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 1 ****************
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        29 TO         29 STEP          1
+
+        159  ELEMENTS (OF      37294  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+        387 NODES (OF      55111  DEFINED) SELECTED FROM
+      159 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  1   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  2   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =   -0.21022       -0.21022       -0.21022       -0.21022    
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO      55111 STEP          1
+
+      55111  NODES (OF      55111  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      47306 STEP          1
+
+      37294  ELEMENTS (OF      37294  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE AUTOMATIC TIME STEPPING THIS LOAD STEP
+
+ USE       5 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE   1000 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_  ( =   0.00000     )  NE  
+      0  ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       1.156   TIME= 12:47:19
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 4 processes per solution.                     
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.969   TIME= 12:47:20
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       2.219   TIME= 12:47:20
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\ 
+ \Scr311D\file0.err ) for these warning messages.                        
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         2 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         3 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         4 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         6 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         7 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE         8 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00660199  VERSION=WINDOWS x64   12:47:20  FEB 27, 2026 CP=      2.281
+
+ wbnew--Static Structural (A5)                                                 
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .PCG                
+      TOLERANCE. . . . . . . . . . . . . . . . . . 1.00000E-08
+   PLASTIC MATERIAL PROPERTIES INCLUDED. . . . . .YES
+   NEWTON-RAPHSON OPTION . . . . . . . . . . . . .PROGRAM CHOSEN   
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         CP =       2.406   TIME= 12:47:20
+ Material number 29 (used by element 47148) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            CP =       2.406   TIME= 12:47:20
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\ 
+ \Scr311D\file0.err ) for these warning messages.                        
+
+ *** NOTE ***                            CP =       2.406   TIME= 12:47:20
+ This nonlinear analysis defaults to using the full Newton-Raphson       
+ solution procedure.  This can be modified using the NROPT command.      
+
+ *** WARNING ***                         CP =       2.406   TIME= 12:47:20
+ It has been detected that you are using reduced integration brick       
+ elements along with the PCG solver (EQSLV,PCG).  Please verify that     
+ you have multiple elements through the thickness in your model or       
+ switch to the SPARSE solver (EQSLV,SPARSE).                             
+
+ *** NOTE ***                            CP =       2.547   TIME= 12:47:20
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+ *WARNING*: Some MPC/Lagrange based elements (e.g.45590) in real         
+ constant set 23 overlap with other MPC/Lagrange based elements          
+ (e.g.46413) in real constant set 25 which can cause overconstraint.     
+
+ *** NOTE ***                            CP =       3.297   TIME= 12:47:20
+ Smoothing on certain target nodes (e.g.10633) for pair ID 11 may have   
+ accuracy issue.  Please verify element normal of connected target       
+ elements (e.g.43796 & 43859).                                           
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 11 and contact element type 11 has been set up.  The       
+ companion pair has real constant set ID 12.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 10633) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                6.7278    
+ Average contact pair depth                    4.3785    
+ Average target surface length                 5.7262    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.0946    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 9.046663486E-14 was detected between contact  
+ element 43451 and target element 43800.                                 
+  
+ Max.  Geometric gap 8.764853084E-02 has been detected between contact   
+ element 43470 and target element 43927.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 12 and contact element type 11 has been set up.  The       
+ companion pair has real constant set ID 11.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example 4)    
+ may have an accuracy issue.  You may switch contact and target          
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                5.8073    
+ Average contact pair depth                    3.7398    
+ Average target surface length                 6.6508    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.93495    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 1.425103057E-14 was detected between contact  
+ element 43614 and target element 43291.                                 
+  
+ Max.  Geometric gap 9.229391537E-02 has been detected between contact   
+ element 43626 and target element 43446.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 13 and contact element type 13 has been set up.  The       
+ companion pair has real constant set ID 14.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.3142    
+ Average contact pair depth                    2.3515    
+ Average target surface length                 3.2575    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.58788    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 8.12683254E-14 was detected between contact   
+ element 44001 and target element 44023.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 14 and contact element type 13 has been set up.  The       
+ companion pair has real constant set ID 13.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.2174    
+ Average contact pair depth                    2.6667    
+ Average target surface length                 3.2857    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.66667    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 1.136868377E-13 was detected between contact  
+ element 44009 and target element 43989.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 15 and contact element type 15 has been set up.  The       
+ companion pair has real constant set ID 16.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.3142    
+ Average contact pair depth                    2.3515    
+ Average target surface length                 3.2575    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.58788    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 8.526512829E-14 was detected between contact  
+ element 44038 and target element 44066.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 16 and contact element type 15 has been set up.  The       
+ companion pair has real constant set ID 15.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.2174    
+ Average contact pair depth                    2.6667    
+ Average target surface length                 3.2857    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.66667    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 5.684341886E-14 was detected between contact  
+ element 44053 and target element 44025.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 17 and contact element type 17 has been set up.  The       
+ companion pair has real constant set ID 18.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 30564) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                6.7278    
+ Average contact pair depth                    4.3785    
+ Average target surface length                 5.9325    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.0946    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 9.653192627E-13 was detected between contact  
+ element 44236 and target element 44566.                                 
+  
+ Max.  Geometric gap 8.767512782E-02 has been detected between contact   
+ element 44247 and target element 44677.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 18 and contact element type 17 has been set up.  The       
+ companion pair has real constant set ID 17.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example 3475) 
+ may have an accuracy issue.  You may switch contact and target          
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                6.0095    
+ Average contact pair depth                    3.7776    
+ Average target surface length                 6.6508    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.94441    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 2.677486823E-14 was detected between contact  
+ element 44399 and target element 44075.                                 
+  
+ Max.  Geometric gap 9.229392788E-02 has been detected between contact   
+ element 44410 and target element 44228.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 19 and contact element type 19 has been set up.  The       
+ companion pair has real constant set ID 20.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.3142    
+ Average contact pair depth                    2.3515    
+ Average target surface length                 3.2575    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.58788    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 6.872280522E-14 was detected between contact  
+ element 44748 and target element 44776.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 20 and contact element type 19 has been set up.  The       
+ companion pair has real constant set ID 19.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.2174    
+ Average contact pair depth                    2.6667    
+ Average target surface length                 3.2857    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.66667    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 5.684341886E-14 was detected between contact  
+ element 44762 and target element 44747.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 21 and contact element type 21 has been set up.  The       
+ companion pair has real constant set ID 22.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 44807) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                6.7278    
+ Average contact pair depth                    4.3785    
+ Average target surface length                 6.2406    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.0946    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 1.195262371E-13 was detected between contact  
+ element 44945 and target element 45406.                                 
+  
+ Max.  Geometric gap 8.967403057E-02 has been detected between contact   
+ element 45065 and target element 45334.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 22 and contact element type 21 has been set up.  The       
+ companion pair has real constant set ID 21.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example 6946) 
+ may have an accuracy issue.  You may switch contact and target          
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                6.3108    
+ Average contact pair depth                    4.0036    
+ Average target surface length                 6.6508    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.0009    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 3.172591106E-14 was detected between contact  
+ element 45248 and target element 44781.                                 
+  
+ Max.  Geometric gap 7.000651957E-02 has been detected between contact   
+ element 45187 and target element 44927.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 23 and contact element type 23 has been set up.  The       
+ companion pair has real constant set ID 24.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 30393) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                20.748    
+ Average contact pair depth                    12.131    
+ Average target surface length                 11.487    
+ Default pinball region factor PINB           0.25000    
+ *WARNING*: The default pinball radius may be too small to capture       
+ contacting zone under small sliding assumption.  Redefine the pinball   
+ radius if necessary.                                                    
+ The resulting pinball region                  3.0329    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 5.517403707E-14 was detected between contact  
+ element 45552 and target element 45929.                                 
+  
+ Max.  Geometric gap 2.90737201 has been detected between contact        
+ element 45599 and target element 46097.                                 
+ *WARNING*: The geometric gap/penetration may be too large.  Increase    
+ pinball radius if it is a true geometric gap/penetration.  Decrease     
+ pinball if it is a false one.                                           
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 24 and contact element type 23 has been set up.  The       
+ companion pair has real constant set ID 23.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 10420) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                11.679    
+ Average contact pair depth                    8.3337    
+ Average target surface length                 20.395    
+ Default pinball region factor PINB           0.25000    
+ *WARNING*: The default pinball radius may be too small to capture       
+ contacting zone under small sliding assumption.  Redefine the pinball   
+ radius if necessary.                                                    
+ The resulting pinball region                  2.0834    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 7.408764116E-14 was detected between contact  
+ element 45691 and target element 45427.                                 
+  
+ Max.  Geometric gap 1.47580475 has been detected between contact        
+ element 45902 and target element 45455.                                 
+ *WARNING*: The geometric gap/penetration may be too large.  Increase    
+ pinball radius if it is a true geometric gap/penetration.  Decrease     
+ pinball if it is a false one.                                           
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 25 and contact element type 25 has been set up.  The       
+ companion pair has real constant set ID 26.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 41161) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                21.651    
+ Average contact pair depth                    12.439    
+ Average target surface length                 15.873    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  3.1097    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 9.473838946E-14 was detected between contact  
+ element 46363 and target element 46756.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 26 and contact element type 25 has been set up.  The       
+ companion pair has real constant set ID 25.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 10451) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                16.184    
+ Average contact pair depth                    8.0731    
+ Average target surface length                 21.189    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  2.0183    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 1.036367519E-13 was detected between contact  
+ element 46682 and target element 46173.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 27 and contact element type 27 has been set up.  The       
+ companion pair has real constant set ID 28.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 44859) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                49.248    
+ Average contact pair depth                    21.898    
+ Average target surface length                 15.542    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  5.4744    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 1.966945922E-13 was detected between contact  
+ element 46864 and target element 47029.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 28 and contact element type 27 has been set up.  The       
+ companion pair has real constant set ID 27.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 41177) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                15.793    
+ Average contact pair depth                    9.7566    
+ Average target surface length                 47.850    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  2.4391    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       3.984   TIME= 12:47:20
+ Max.  Initial penetration 2.041953731E-13 was detected between contact  
+ element 46890 and target element 46838.                                 
+ ****************************************
+  
+  
+  
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 37294
+  ...Number of nodes:    55111
+  ...Decompose to 4 CPU domains
+  ...Element load balance ratio =     1.013
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   AUTOMATIC TIME STEPPING . . . . . . . . . . . .    ON
+      INITIAL NUMBER OF SUBSTEPS . . . . . . . . .     5
+      MAXIMUM NUMBER OF SUBSTEPS . . . . . . . . .  1000
+      MINIMUM NUMBER OF SUBSTEPS . . . . . . . . .     1
+   MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS. . . .    15
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   TERMINATE ANALYSIS IF NOT CONVERGED . . . . . .YES (EXIT)  
+   CONVERGENCE CONTROLS. . . . . . . . . . . . . .USE DEFAULTS
+   COPY INTEGRATION POINT VALUES TO NODE . . . . .YES, FOR ELEMENTS WITH
+                                                  ACTIVE MAT. NONLINEARITIES
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 11 and contact element type 11 has been set up.  The       
+ companion pair has real constant set ID 12.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example       
+ 10633) may have an accuracy issue.  You may switch contact and target   
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                6.7278    
+ Average contact pair depth                    4.3785    
+ Average target surface length                 5.7262    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                  1.0946    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Max.  Initial penetration 9.046663486E-14 was detected between contact  
+ element 43451 and target element 43800.                                 
+  
+ Max.  Geometric gap 8.764853084E-02 has been detected between contact   
+ element 43470 and target element 43927.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 12 and contact element type 11 has been set up.  The       
+ companion pair has real constant set ID 11.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Distributed constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ *WARNING*: Smoothing on certain contact/target nodes (for example 4)    
+ may have an accuracy issue.  You may switch contact and target          
+ surfaces, or split the current pair into multiple pairs, or use Gauss   
+ detection.                                                              
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                5.8073    
+ Average contact pair depth                    3.7398    
+ Average target surface length                 6.6508    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.93495    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Max.  Initial penetration 1.425103057E-14 was detected between contact  
+ element 43614 and target element 43291.                                 
+  
+ Max.  Geometric gap 9.229391537E-02 has been detected between contact   
+ element 43626 and target element 43446.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 13 and contact element type 13 has been set up.  The       
+ companion pair has real constant set ID 14.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.3142    
+ Average contact pair depth                    2.3515    
+ Average target surface length                 3.2575    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.58788    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Max.  Initial penetration 8.12683254E-14 was detected between contact   
+ element 44001 and target element 44023.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 14 and contact element type 13 has been set up.  The       
+ companion pair has real constant set ID 13.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Auto surface constraint is built
+ Contact algorithm: MPC based approach
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Contact related postprocess items (ETABLE, pressure ...) are not        
+ available.                                                              
+ Contact detection at: nodal point (normal to target surface)
+ MPC will be built internally to handle bonded contact.
+ Average contact surface length                3.2174    
+ Average contact pair depth                    2.6667    
+ Average target surface length                 3.2857    
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.66667    
+ Default target edge extension factor TOLS     2.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       5.781   TIME= 12:47:21
+ Max.  Initial penetration 1.136868377E-13 was detected between contact  
+ element 44009 and target element 43989.                                 
+ ****************************************
+  
+ MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS HAS BEEN MODIFIED              
+  TO BE, NEQIT = 26, BY SOLUTION CONTROL LOGIC.                          
+
+
+ *** NOTE ***                            CP =       6.078   TIME= 12:47:22
+ The PCG solver has automatically set the level of difficulty for this   
+ model to 3.                                                             
+  
+ The FEA model contains 0 external CE equations and 6366 internal CE     
+ equations.                                                              
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          11
+
+ *** NOTE ***                            CP =       7.047   TIME= 12:47:23
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          12
+ Max.  Penetration of 0 has been detected between contact element 43614  
+ and target element 43288.                                               
+  
+ Max.  Geometrical gap of 2.832367069E-14 has been detected between      
+ contact element 43614 and target element 43289.                         
+  
+ Max.  Geometrical penetration of -2.573441346E-16 has been detected     
+ between contact element 43614 and target element 43289.                 
+ For total 182 contact elements, there are 160 elements are in contact.  
+ There are 160 elements are in sticking.                                 
+ Max.  Pinball distance 0.934948481.                                     
+ One of the contact searching regions contains at least 9 target         
+ elements.                                                               
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          13
+ Max.  Penetration of 0 has been detected between contact element 43992  
+ and target element 44019.                                               
+  
+ Max.  Geometrical gap of 1.136868377E-13 has been detected between      
+ contact element 43994 and target element 44022.                         
+  
+ Max.  Geometrical penetration of -1.136868377E-13 has been detected     
+ between contact element 43994 and target element 44022.                 
+ For total 14 contact elements, there are 14 elements are in contact.    
+ There are 14 elements are in sticking.                                  
+ Max.  Pinball distance 0.587882288.                                     
+ One of the contact searching regions contains at least 8 target         
+ elements.                                                               
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          14
+
+ *** NOTE ***                            CP =       7.047   TIME= 12:47:23
+ Contact pair is inactive.                                               
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.23877        0.0000        0.0000     |     0.0000        6.9524       -83.131    
+         0.0000       0.23877        0.0000     |    -6.9524        0.0000        152.96    
+         0.0000        0.0000       0.23877     |     83.131       -152.96        0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |     45714.       -53249.       -4515.0    
+                                                |    -53249.       0.10590E+06   -2382.7    
+                                                |    -4515.0       -2382.7       0.15089E+06
+
+   TOTAL MASS = 0.23877    
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=    640.59        348.16        29.117    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+         16569.        4.2836       -61.307    
+         4.2836        7714.3        37.853    
+        -61.307        37.853        23969.    
+
+   PRINCIPAL INERTIAS =    16568.        7714.2        23969.    
+   ORIENTATION VECTORS OF THE INERTIA PRINCIPAL AXES IN GLOBAL CARTESIAN
+     ( 1.000, 0.001, 0.008) (-0.000, 1.000,-0.002) (-0.008, 0.002, 1.000) 
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.489658E-03
+     2  0.489658E-03
+     3  0.489658E-03
+     4  0.225792    
+     5  0.445036E-05
+     6  0.445036E-05
+     7  0.445036E-05
+     8  0.382246E-02
+     9  0.376429E-02
+    10  0.391152E-02
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 35518955.7 at element 26416.                                  
+ Minimum = 160850.961 at element 127.                                    
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      1903  SOLID187      0.141   0.000074
+        2      1903  SOLID187      0.109   0.000057
+        3      1903  SOLID187      0.125   0.000066
+        4     12157  SOLID187      0.859   0.000071
+        5        27  SOLID186      0.000   0.000000
+        6        27  SOLID186      0.000   0.000000
+        7        27  SOLID186      0.000   0.000000
+        8      6759  SOLID187      0.484   0.000072
+        9      2162  SOLID187      0.203   0.000094
+       10      6407  SOLID187      0.438   0.000068
+       11       345  CONTA174      0.000   0.000000
+       12       345  TARGE170      0.000   0.000000
+       13        23  CONTA174      0.031   0.001359
+       14        23  TARGE170      0.000   0.000000
+       15        23  CONTA174      0.000   0.000000
+       16        23  TARGE170      0.000   0.000000
+       17       332  CONTA174      0.000   0.000000
+       18       332  TARGE170      0.000   0.000000
+       19        23  CONTA174      0.000   0.000000
+       20        23  TARGE170      0.000   0.000000
+       21       314  CONTA174      0.031   0.000100
+       22       314  TARGE170      0.000   0.000000
+       23       374  CONTA174      0.078   0.000209
+       24       374  TARGE170      0.000   0.000000
+       25       335  CONTA174      0.047   0.000140
+       26       335  TARGE170      0.000   0.000000
+       27       161  CONTA174      0.016   0.000097
+       28       161  TARGE170      0.000   0.000000
+       29       159  SURF154       0.016   0.000098
+ Time at end of element matrix formulation CP = 7.046875.                
+
+ ALL CURRENT MAPDL DATA WRITTEN TO FILE NAME= file.rdb
+  FOR POSSIBLE RESUME FROM THIS POINT
+     FORCE CONVERGENCE VALUE  =   2.186      CRITERION=  0.1093E-01
+ Iteration=    30 Ratio=  0.140954     Limit=  1.000000E-08 Wall=     0.2
+ Iteration=    65 Ratio=  8.466472E-04 Limit=  1.000000E-08 Wall=     0.4
+ Iteration=   110 Ratio=  3.139628E-06 Limit=  1.000000E-08 Wall=     0.6
+
+ DISTRIBUTED PCG SOLVER SOLUTION CONVERGED
+
+ DISTRIBUTED PCG SOLVER SOLUTION STATISTICS
+
+   NUMBER OF ITERATIONS=         152
+   NUMBER OF EQUATIONS =      165333
+   CALCULATED NORM     = 0.93572E-08
+   SPECIFIED TOLERANCE = 0.10000E-07
+   TOTAL CPU TIME (sec)=        0.92
+   TOTAL WALL TIME(sec)=        1.14
+   TOTAL MEMORY (GB)   =        0.08
+
+     DISP CONVERGENCE VALUE   =  0.5543E-04  CRITERION=  0.2772E-05
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5543E-04
+     DISP CONVERGENCE VALUE   =  0.5543E-04  CRITERION=  0.4596E-04
+     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.5543E-04
+     FORCE CONVERGENCE VALUE  =  0.2087E-07  CRITERION=  0.1875E-01 <<< CONVERGED
+    EQUIL ITER   2 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.1670E-12
+     DISP CONVERGENCE VALUE   =  0.1670E-12  CRITERION=  0.4596E-04 <<< CONVERGED
+     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.1670E-12
+     FORCE CONVERGENCE VALUE  =  0.3795E-12  CRITERION=  0.1875E-01 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   2
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      1903  SOLID187      0.078   0.000041
+        2      1903  SOLID187      0.078   0.000041
+        3      1903  SOLID187      0.078   0.000041
+        4     12157  SOLID187      0.531   0.000044
+        5        27  SOLID186      0.000   0.000000
+        6        27  SOLID186      0.000   0.000000
+        7        27  SOLID186      0.000   0.000000
+        8      6759  SOLID187      0.281   0.000042
+        9      2162  SOLID187      0.078   0.000036
+       10      6407  SOLID187      0.281   0.000044
+       11       345  CONTA174      0.016   0.000045
+       13        23  CONTA174      0.000   0.000000
+       15        23  CONTA174      0.000   0.000000
+       17       332  CONTA174      0.000   0.000000
+       19        23  CONTA174      0.000   0.000000
+       21       314  CONTA174      0.000   0.000000
+       23       374  CONTA174      0.000   0.000000
+       25       335  CONTA174      0.016   0.000047
+       27       161  CONTA174      0.000   0.000000
+       29       159  SURF154       0.016   0.000098
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      1903  SOLID187      0.000   0.000000
+        2      1903  SOLID187      0.016   0.000008
+        3      1903  SOLID187      0.000   0.000000
+        4     12157  SOLID187      0.125   0.000010
+        5        27  SOLID186      0.000   0.000000
+        6        27  SOLID186      0.000   0.000000
+        7        27  SOLID186      0.000   0.000000
+        8      6759  SOLID187      0.094   0.000014
+        9      2162  SOLID187      0.000   0.000000
+       10      6407  SOLID187      0.062   0.000010
+       11       345  CONTA174      0.000   0.000000
+       13        23  CONTA174      0.000   0.000000
+       15        23  CONTA174      0.000   0.000000
+       17       332  CONTA174      0.000   0.000000
+       19        23  CONTA174      0.000   0.000000
+       21       314  CONTA174      0.000   0.000000
+       23       374  CONTA174      0.000   0.000000
+       25       335  CONTA174      0.000   0.000000
+       27       161  CONTA174      0.000   0.000000
+       29       159  SURF154       0.000   0.000000
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      2
+ *** TIME =  0.200000         TIME INC =  0.200000    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.20000      UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.3747E-08  CRITERION=  0.3750E-01
+     DISP CONVERGENCE VALUE   =  0.9502E-15  CRITERION=  0.4596E-04 <<< CONVERGED
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.9502E-15
+     DISP CONVERGENCE VALUE   =  0.9502E-15  CRITERION=  0.4596E-04 <<< CONVERGED
+     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.9502E-15
+     FORCE CONVERGENCE VALUE  =  0.7425E-12  CRITERION=  0.3750E-01 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     2  COMPLETED.    CUM ITER =      3
+ *** TIME =  0.400000         TIME INC =  0.200000    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.30000      INCREASED (FACTOR = 1.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.1836E-11  CRITERION=  0.6562E-01
+     DISP CONVERGENCE VALUE   =  0.2693E-17  CRITERION=  0.4596E-04 <<< CONVERGED
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2693E-17
+     DISP CONVERGENCE VALUE   =  0.2693E-17  CRITERION=  0.4596E-04 <<< CONVERGED
+     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.2693E-17
+     FORCE CONVERGENCE VALUE  =  0.1297E-11  CRITERION=  0.6562E-01 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     3  COMPLETED.    CUM ITER =      4
+ *** TIME =  0.700000         TIME INC =  0.300000    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.30000      UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2802E-11  CRITERION=  0.9374E-01
+     DISP CONVERGENCE VALUE   =  0.3154E-17  CRITERION=  0.4596E-04 <<< CONVERGED
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3154E-17
+     DISP CONVERGENCE VALUE   =  0.3154E-17  CRITERION=  0.4596E-04 <<< CONVERGED
+     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.3154E-17
+     FORCE CONVERGENCE VALUE  =  0.1978E-11  CRITERION=  0.9374E-01 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     4  COMPLETED.    CUM ITER =      5
+ *** TIME =   1.00000         TIME INC =  0.300000    
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+       37.000 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+       16.250 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  12.7947222    
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _PCGITER  FROM  ACTI  ITEM=SOLU CGIT  VALUE=  143.000000    
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =        25.156
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R2          25.2     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00660199  VERSION=WINDOWS x64   12:47:41  FEB 27, 2026 CP=     25.156
+
+ wbnew--Static Structural (A5)                                                 
+
+
+
+          ***** MAPDL RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =      25.156   TIME= 12:47:41
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE MAPDL POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =        25.156
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  12.7947222    
+
+ PARAMETER _PREPTIME =     0.000000000    
+
+ PARAMETER _SOLVTIME =     22.00000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     22.00000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.01304984    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.228931200    
+
+ *GET  _SSMODE   FROM  ACTI  ITEM=SOLU SSMM  VALUE=  2.00000000    
+
+ *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  161796.000    
+
+ *GET  _SOL_END_TIME  FROM  ACTI  ITEM=SET  TIME  VALUE=  1.00000000    
+
+ *IF  _sol_end_time  ( =   1.00000     )  EQ  
+      1.000000  ( =   1.00000     )  THEN    
+
+ /FCLEAN COMMAND REMOVING ALL LOCAL FILES
+
+ *ENDIF
+ --- Total number of nodes = 55111
+ --- Total number of elements = 37294
+ --- Element load balance ratio = 1.01304984
+ --- Time to combine distributed files = 0.2289312
+ --- Sparse memory mode = 2
+ --- Number of DOF = 161796
+
+ EXIT MAPDL WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          3
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2025 R2            Build: 25.2       Update: UP20250519   Platform: WINDOWS x64 
+Date Run: 02/27/2026   Time: 12:47     Process ID: 12600
+Operating System: Windows 10  (Build: 19045)
+
+Processor Model: 12th Gen Intel(R) Core(TM) i5-12400
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) oneAPI Math Kernel Library Version 2024.2.3-Product Build 20250403
+
+Number of machines requested            :    1
+Total number of cores available         :   12
+Number of physical cores available      :    6
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.14 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             DESKTOP-26SU38V   C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D
+     1             DESKTOP-26SU38V   C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D
+     2             DESKTOP-26SU38V   C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D
+     3             DESKTOP-26SU38V   C:\Users\student\AppData\Local\Temp\WB_student_12964_2\_ProjectScratch\Scr311D
+ 
+Latency time from master to core     1 =    2.784 microseconds
+Latency time from master to core     2 =    2.413 microseconds
+Latency time from master to core     3 =    2.307 microseconds
+ 
+Communication speed from master to core     1 =  4078.03 MB/sec
+Communication speed from master to core     2 =  6947.22 MB/sec
+Communication speed from master to core     3 =  8002.24 MB/sec
+
+Total CPU time for main thread                    :       21.0 seconds
+Total CPU time summed for all threads             :       25.9 seconds
+
+Elapsed time spent obtaining a license            :        0.5 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.2 seconds
+Elapsed time spent solution - preprocessing       :        1.2 seconds
+Elapsed time spent computing solution             :       19.6 seconds
+Elapsed time spent solution - postprocessing      :        0.2 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            PCG (symmetric)
+Equation solver computational rate                :        8.6 Gflops
+
+Sum of disk space used on all processes           :      410.5 MB
+
+Sum of memory used on all processes               :      508.0 MB
+Sum of memory allocated on all processes          :     3072.0 MB
+Physical memory available                         :         16 GB
+Total amount of I/O written to disk               :        2.3 GB
+Total amount of I/O read from disk                :        4.9 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2025 R2         Build 25.2         UP20250519    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)     53 MB     Max Scratch Used(Master)    141 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)   106 MB |
+ |  Sum Database Used(All)        56 MB     Sum Scratch Used(All)       452 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =         25.891       Time  =  12:47:52          |
+ |        Elapsed Time (sec) =         40.000       Date  =  02/27/2026        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
